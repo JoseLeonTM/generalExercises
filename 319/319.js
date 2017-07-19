@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const quicksort_1 = require("./quicksort");
+const mergesort_1 = require("./mergesort");
+const heapsort_1 = require("./heapsort");
+const arr = [12, 5, 89, 654, 2100, 87, 5, 15, 32];
+// const arr = [7,2,1,8,6,3,5,4];
+// const arr= [1,5,3,4,2];
+var quicksorted = quicksort_1.default(arr);
+var mergesorted = mergesort_1.default(arr);
+var heapsorted = heapsort_1.default(arr);
+console.log("Original: ", arr);
